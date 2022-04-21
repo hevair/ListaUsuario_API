@@ -34,8 +34,8 @@ dotnet.core Dapper e SQL server, desta forma criando API de forma rapida e reali
 
 * Listing UserInfo
 
-![Json](screenshots/Dapper-backend-imagem-01.png)
+![Json](screenshots/Dapper-backend-imagem-01.PNG)
 
 * Swagger
 
-![Swagger](screenshots/Dapper-backend-imagem-02.png)
+![Swagger](screenshots/Dapper-backend-imagem-02.PNG)
