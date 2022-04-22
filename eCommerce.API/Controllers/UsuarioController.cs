@@ -1,5 +1,6 @@
 using System.Threading.Tasks;
 using eCommerce.API.Interface;
+using eCommerce.API.Models;
 using eCommerce.API.Repository;
 using Microsoft.AspNetCore.Mvc;
 
@@ -23,5 +24,20 @@ namespace eCommerce.API.Controllers
             return Ok(result);
         }
         
+        [HttpPost]
+        public async Task<ActionResult> Insert(Usuario usuario){
+
+            var result = await _repository.IncluirUsuario(usuario);
+
+            return Ok(result);
+        }
+
+        [HttpDelete]
+        public async Task<ActionResult> Delete(string id){
+            
+            await _repository.RemoverUsuario(id);
+
+            return Ok();
+        }
     }
 }
